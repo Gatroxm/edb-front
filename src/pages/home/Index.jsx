@@ -1,9 +1,21 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+import {
+  Container,
+  Row,
+  Col
+} from 'react-bootstrap';
+import { HeadViews } from '../../components/shared/HeadViews';
 export const Index = () => {
   return (
     <>
-      <Button variant="primary">Primary</Button>
+      <Container>
+        <HeadViews title="App de Usuarios" />
+        <Row>
+          <Col>
+            <a href="/user" className="btn btn-info text-white">Listado Deusuarios</a>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }
